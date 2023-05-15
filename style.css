@@ -1,0 +1,161 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+main{
+    min-height: 100vh;
+    background-color: hsl(204, 43%, 93%);
+    padding: 150px 350px;
+    font-family: 'Karla', sans-serif;  
+}
+
+.container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    border-radius: 10px;
+    box-shadow: 4px 4px 20px hsla(218, 22%, 67%,.25);
+}
+
+
+
+.join{
+    background-color: white;
+    grid-column: 1/3;
+    padding: 40px;
+    border-radius: 10px 10px 0px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.join h1{
+    font-size: 24px;
+    color: hsl(179, 62%, 43%);
+    font-weight: 700;
+}
+.join span{
+    color: hsl(71, 73%, 54%);
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: 20px;
+}
+.join p{
+    font-size: 16px;
+    line-height: 180%;
+    color: hsl(218, 22%, 67%);  
+    margin-top: 10px;
+}
+
+.row2{
+    display: flex;
+
+}
+
+.subcription{
+    width: 100%;
+    background-color: hsl(179, 62%, 43%);
+    border-radius: 0px 0px 0px 10px;
+    padding: 40px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+}
+.subcription h1{
+    font-size: 20px;
+    font-weight: 700;
+    color: white;
+}
+.subcription .dollar{
+    display: flex;
+    gap: 10px;
+
+    align-items: first center;
+}
+.price{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.dollar h1{
+    font-size: 42px;
+}
+.dollar p{
+    font-size: 16px;
+    font-weight: 400;
+    color: rgba(255, 255, 255,);
+    opacity: 70% !important;
+}
+.price p{
+    font-size: 16px;
+    font-weight: 400;
+    color: white;
+}
+.subcription .btn{
+    background-color: hsl(71, 73%, 54%);
+    height: 60px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    box-shadow: 4px 4px 6px hsla(0, 0%, 0%, 0.25);
+
+    font-size: 20px;
+    font-weight: 400;
+    color: white;
+}
+
+
+
+.why-us{
+    width: 100%;
+    background-color: hsla(179, 62%, 43%, 0.7);
+    border-radius: 0px 0px 10px 0px;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.why-us h1{
+    font-size: 20px;
+    font-weight: 700;
+    color: white;
+}
+
+.why-us ul{
+    list-style-type: none;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.why-us ul li{
+    opacity: 70%;
+    font-size: 16px;
+}
+
+
+@media screen and (max-width:768px) {
+    main{
+        padding: 40px 15px;
+    }
+    .container{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .row2{
+        flex-direction: column;
+    }
+    .subcription{
+        border-radius: 0px;
+
+    }
+    .why-us{
+        
+        border-radius: 0px 0px 10px 10px;
+    }
+}
